@@ -5,7 +5,7 @@ This is a reference document regarding Entity Framework Core commands.
 ## Get-Help
 
 Cmdlet                      Description
---------------------------  ---------------------------------------------------
+--------------------------------------------------------------------------------
 Add-Migration               Adds a new migration.
 
 Drop-Database               Drops the database.
