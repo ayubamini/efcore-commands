@@ -34,8 +34,9 @@ Reference document regarding Entity Framework Core commands.
 ```
 
 ## resource
-https://www.learnentityframeworkcore.com/walkthroughs/existing-database
-https://learn.microsoft.com/en-us/ef/core/managing-schemas/scaffolding/?tabs=vs
+[https://www.learnentityframeworkcore.com/walkthroughs/existing-database](https://www.learnentityframeworkcore.com/walkthroughs/existing-database)
+
+[https://learn.microsoft.com/en-us/ef/core/managing-schemas/scaffolding/?tabs=vs](https://learn.microsoft.com/en-us/ef/core/managing-schemas/scaffolding/?tabs=vs)
 
 # T4 Custom template: DbContext and EntityTypes
 ```csharp
