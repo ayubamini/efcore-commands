@@ -55,3 +55,10 @@ Reference document regarding Entity Framework Core commands.
     ```csharp PM> Remove-Migration ```
 
   - UPD: The second step seems to be not required in latest versions of Visual Studio (2017).
+
+
+# Powershell 
+To change filenames inside the Models folder using the below command
+```shell
+Get-ChildItem -Path "D:\EAIGLE-Group\EaigleGatewayAPI\Data" -Filter Tb*.cs | Rename-Item -NewName { $_.name.Substring(2) | % { "" + $_ } }
+```
