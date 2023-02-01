@@ -17,10 +17,11 @@ Reference document regarding Entity Framework Core commands.
 
 ## Create `READ MODEL` classes from Existing DataBase
 ```csharp
- Scaffold-DbContext "Server=localhost;Database=AdventureWorksLT2012;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
+ PM> Scaffold-DbContext "Server=localhost;Database=AdventureWorksLT2012;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
 ```
 # Advanced DbContext and EntityTypes
-##Package Manager Console commands 
+
+## Package Manager Console commands 
 ```csharp
  PM> Scaffold-DbContext "Server=localhost;Database=dashboard_db;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models Model    -Context "ApplicationDbContext" -Namespace AdventureWork.Models -ContextNamespace  AdventureWork.Data.DbContext -DataAnnotations
 ```
