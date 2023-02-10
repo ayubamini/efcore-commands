@@ -60,5 +60,5 @@ Reference document regarding Entity Framework Core commands.
 # Powershell 
 To change file names inside the Models folder using the below command
 ```shell
-Get-ChildItem -Path "D:\EAIGLE-Group\EaigleGatewayAPI\Data" -Filter Tb*.cs | Rename-Item -NewName { $_.name.Substring(2) | % { "" + $_ } }
+Get-ChildItem -Path "[YOUR PROJECT PATH]" -Filter Tb*.cs | Rename-Item -NewName { $_.name.Substring(2) | % { "" + $_ } }
 ```
