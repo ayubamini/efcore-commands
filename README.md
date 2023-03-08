@@ -33,6 +33,14 @@ Reference document regarding Entity Framework Core commands.
  > dotnet ef dbcontext scaffold "Server=.\;Database=AdventureWorksLT2012;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -o Model -c "ApplicationDbContext" --data-annotations --context-dir 
 ```
 
+## NET CLI (without annotation)
+```csharp
+ > dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+ > dotnet add package Microsoft.EntityFrameworkCore.Design
+ > dotnet tool install --global dotnet-ef
+ > dotnet ef dbcontext scaffold "Server=.\;Database=AdventureWorksLT2012;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -o Model -c "ApplicationDbContext" --data-annotations --context-dir 
+```
+
 ## resource
 [https://www.learnentityframeworkcore.com/walkthroughs/existing-database](https://www.learnentityframeworkcore.com/walkthroughs/existing-database)
 
