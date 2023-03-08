@@ -47,10 +47,12 @@ Reference document regarding Entity Framework Core commands.
 [https://learn.microsoft.com/en-us/ef/core/managing-schemas/scaffolding/?tabs=vs](https://learn.microsoft.com/en-us/ef/core/managing-schemas/scaffolding/?tabs=vs)
 
 # T4 Custom template: DbContext and EntityTypes
+Use this tools before DbContext scaffold. Make any changes anythings you want on both dbcontext.t4 and entitytypes.t4 and then run scaffolding.
 ```csharp
  > dotnet new install Microsoft.EntityFrameworkCore.Templates
  > dotnet new ef-templates
  // for update use --force at the end
+ > dotnet ef dbcontext scaffold "Server=.\;Database=AdventureWorksLT2012;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -o "Data\Entities" --context-dir "Data\Context" -c "ApplicationDbContext" -f --no-pluralize --no-build --json
 ```
 
 # How to Revert to the last migration
