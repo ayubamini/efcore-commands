@@ -47,7 +47,7 @@ Reference document regarding Entity Framework Core commands.
 [https://learn.microsoft.com/en-us/ef/core/managing-schemas/scaffolding/?tabs=vs](https://learn.microsoft.com/en-us/ef/core/managing-schemas/scaffolding/?tabs=vs)
 
 # T4 Custom template: DbContext and EntityTypes
-Use this tools before DbContext scaffold. Make any changes anythings you want on both dbcontext.t4 and entitytypes.t4 and then run scaffolding.
+Use this tools before DbContext scaffold. Making any changes you want on both dbcontext.t4 and entitytypes.t4 and then run scaffolding.
 ```csharp
  > dotnet new install Microsoft.EntityFrameworkCore.Templates
  > dotnet new ef-templates
