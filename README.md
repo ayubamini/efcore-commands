@@ -38,7 +38,7 @@ Reference document regarding Entity Framework Core commands.
  > dotnet add package Microsoft.EntityFrameworkCore.SqlServer
  > dotnet add package Microsoft.EntityFrameworkCore.Design
  > dotnet tool install --global dotnet-ef
- > dotnet ef dbcontext scaffold "Server=.\;Database=AdventureWorksLT2012;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -o Model -c "ApplicationDbContext" --data-annotations --context-dir 
+ > dotnet ef dbcontext scaffold "Server=.\;Database=AdventureWorksLT2012;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -o Model -c "ApplicationDbContext" --context-dir 
 ```
 
 ## resource
