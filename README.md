@@ -52,6 +52,9 @@ Use this tools before DbContext scaffold. Making any changes you want on both db
  > dotnet new install Microsoft.EntityFrameworkCore.Templates
  > dotnet new ef-templates
  // for update use --force at the end
+```
+Customizing code templates if would like and then: 
+```csharp
  > dotnet ef dbcontext scaffold "Server=.\;Database=AdventureWorksLT2012;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -o "Data\Entities" --context-dir "Data\Context" -c "ApplicationDbContext" -f --no-pluralize --no-build --json
 ```
 
